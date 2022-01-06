@@ -21,6 +21,13 @@ function addition() {
         echo "incorrect"
         total=${#score[@]}
         echo "Final Score : ${total}"
+        git checkout main
+        git pull
+        git checkout talmage
+        git merge
+        git add .
+        git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)`"
+        git push
         exit 1
     fi
 
