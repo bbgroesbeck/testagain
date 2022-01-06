@@ -4,5 +4,5 @@
 echo "talmage's code"
 #hey there
 #Noah Was here
-
-#tyler is awake and mckay is tired
+#tyler is tired
+#tyler is awake now and mckay is tired
