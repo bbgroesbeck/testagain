@@ -1,3 +1,4 @@
+# set -x
 rand1=$(echo $(($RANDOM % 25)))
 rand2=$(echo $(($RANDOM % 25)))
 sum=$(echo $((${rand1} + ${rand2})))
@@ -29,9 +30,9 @@ function addition() {
     addition
 }
 
-while true; do
-    addition
-done
+# while true; do
+#     addition
+# done
 
 case ${1} in
 
