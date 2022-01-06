@@ -35,8 +35,8 @@ function addition() {
 function subtraction() {
     green='\033[0;32m'
     gray='\033[0;37m'
-    rand1=$(echo $(($RANDOM % 25)))
-    rand2=$(echo $(($RANDOM % 25)))
+    rand1=$((($RANDOM % 25) + 1))
+    rand2=$((($RANDOM % 25) + 1))
 
     if [[ ${rand1} -lt ${rand2} ]]; then
         difference=$(echo $((${rand2} - ${rand1})))
@@ -109,8 +109,8 @@ function mutliplication() {
 function division() {
     green='\033[0;32m'
     gray='\033[0;37m'
-    rand1=$(echo $(($RANDOM % 25)))
-    rand2=$(echo $(($RANDOM % 25)))
+    rand1=$((($RANDOM % 25) + 1))
+    rand2=$((($RANDOM % 25) + 1))
 
     if [[ ${rand1} -lt ${rand2} ]]; then
         quotient=$(echo $((${rand2} / ${rand1})))
@@ -136,7 +136,7 @@ function division() {
         git checkout talmage
         git merge
         git add .
-        git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)` in subtraction"
+        git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)` in division"
         git push
         exit 1
     fi
