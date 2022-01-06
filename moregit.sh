@@ -1,6 +1,6 @@
 #this is where Bryce started
-this is tyler
+#this is tyler
 
 echo "talmage's code"
 
-Noah Was here
+#Noah Was here
