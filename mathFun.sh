@@ -21,6 +21,7 @@ function addition() {
         echo "incorrect"
         total=${#score[@]}
         echo "Final Score : ${total}"
+<<<<<<< HEAD
         # git checkout main
         # git pull
         git checkout feature/noah
@@ -28,6 +29,8 @@ function addition() {
         git add mathFun.sh
         git commit -m "On $(date) $(whoami) score was ${total}"
         git push
+=======
+>>>>>>> origin
         exit 1
     fi
 
