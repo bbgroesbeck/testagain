@@ -26,6 +26,7 @@ function addition() {
         git checkout feature/Jonas
         # git merge main
         git add -u
+        # ^^ or git add mathFun.sh
         git commit -m "On $(date) $(whoami) score was ${total}"
         git push
         exit 1
