@@ -1,3 +1,9 @@
+if [[ -z ${1} ]]; then
+    echo "Please choose a game mode. Include a position parameter of 'add', 'subt', 'mult', or 'div'"
+    exit
+fi
+
+
 function addition() {
     green='\033[0;32m'
     gray='\033[0;37m'
@@ -138,10 +144,6 @@ function division() {
     # echo "`echo $'\n'`"
     division
 }
-
-if [[ -z ${1} ]]; then
-    "Please choose a game mode. Include a position parameter of 'add', 'subt', 'mult', or 'div'"
-fi
 
 case ${1} in
 
