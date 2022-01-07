@@ -23,7 +23,7 @@ function addition() {
         echo "Final Score : ${total}"
         # git checkout main
         # git pull
-        git checkout feature/noah
+        git checkout HotFixNoah
         # git merge main
         git add mathFun.sh
         git commit -m "On $(date) $(whoami) score was ${total}"
