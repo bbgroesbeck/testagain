@@ -1,4 +1,5 @@
 # set -x
+# I have arived
 rand1=$(echo $(($RANDOM % 25)))
 rand2=$(echo $(($RANDOM % 25)))
 sum=$(echo $((${rand1} + ${rand2})))
@@ -21,6 +22,13 @@ function addition() {
         echo "incorrect"
         total=${#score[@]}
         echo "Final Score : ${total}"
+        # git checkout main
+        # git pull
+        git checkout noah
+        # git merge main
+        git add mathFun.sh
+        git commit -m "On $(date) Noah's score was ${total}"
+        git push
         exit 1
     fi
 
