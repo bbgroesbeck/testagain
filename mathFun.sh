@@ -24,7 +24,7 @@ function addition() {
         git status
         git add mathFun.sh
         git status
-        git commit -m "${total}"
+        git commit -m "Final Score For Addition: ${total}"
         git status
         git push
         exit 1
@@ -62,7 +62,7 @@ function subtraction() {
         git status
         git add mathFun.sh
         git status
-        git commit -m "${total}"
+        git commit -m "Final Score For Subtraction: ${total}"
         git status
         git push
         exit 1
@@ -95,7 +95,7 @@ function multiplacation() {
         git status
         git add mathFun.sh
         git status
-        git commit -m "${total}"
+        git commit -m "Final Score For Multiplacation: ${total}"
         git status
         git push
         exit 1
@@ -133,7 +133,7 @@ function division() {
         git status
         git add mathFun.sh
         git status
-        git commit -m "${total}"
+        git commit -m "Final Score For Division: ${total}"
         git status
         git push
         exit 1
