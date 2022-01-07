@@ -16,14 +16,10 @@ function addition() {
         echo "incorrect"
         total=${#score[@]}
         echo "Final Score : ${total}"
-        git checkout main
-        git pull
         git checkout talmage
-        git merge
-        git add .
+        git add mathFun.sh
         git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)` in addition"
         git push
-        exit 1
     fi
 
     # echo "`echo $'\n'`"
@@ -35,8 +31,8 @@ function addition() {
 function subtraction() {
     green='\033[0;32m'
     gray='\033[0;37m'
-    rand1=$((($RANDOM % 25) + 1))
-    rand2=$((($RANDOM % 25) + 1))
+    rand1=$(echo $((($RANDOM % 25) + 1)))
+    rand2=$(echo $((($RANDOM % 25) + 1)))
 
     if [[ ${rand1} -lt ${rand2} ]]; then
         difference=$(echo $((${rand2} - ${rand1})))
@@ -56,14 +52,10 @@ function subtraction() {
         echo "incorrect"
         total=${#score[@]}
         echo "Final Score : ${total}"
-        git checkout main
-        git pull
         git checkout talmage
-        git merge
         git add .
         git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)` in subtraction"
         git push
-        exit 1
     fi
 
     # echo "`echo $'\n'`"
