@@ -62,6 +62,7 @@ function subtraction() {
         git add .
         git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)` in subtraction"
         git push
+        exit
     fi
 
     # echo "`echo $'\n'`"
