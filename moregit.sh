@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# This is all my branch
+=======
 #this is where Bryce started
 #this is tyler
 #watch red letter media
@@ -5,10 +8,13 @@ echo "talmage's code"
 #hey there
 #Noah Was here
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Mckay is tired
 #This is Jonas
 #This is Jonas part two
 =======
+=======
+>>>>>>> feature/anja
 <<<<<<< HEAD
 git checkout main
 git pull
