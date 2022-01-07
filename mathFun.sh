@@ -24,7 +24,6 @@ function addition() {
         echo "Final Score : ${total}"
         # git checkout main
         # git pull
-        git checkout noah
         # git merge main
         git add mathFun.sh
         git commit -m "On $(date) Noah's score was ${total}"
