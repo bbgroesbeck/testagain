@@ -116,8 +116,6 @@ function division() {
             echo "What is" ${rand1} "/" ${rand2} "? " && read answer
     fi
 
-    echo "What is" ${rand1} "/" ${rand2} "? " && read answer
-
     if [[ ${answer} == ${quotient} ]]; then
         echo -e ${green}"correct"${gray}
         score+=(1)
