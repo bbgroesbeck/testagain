@@ -110,10 +110,10 @@ function division() {
 
     if [[ ${rand1} -lt ${rand2} ]]; then
         quotient=$(echo $((${rand2} / ${rand1})))
-            echo "What is" ${rand2} "/" ${rand1} "? " && read answer
+            echo "What is" ${rand2} "/" ${rand1} "? (no remainder)" && read answer
     else
         quotient=$(echo $((${rand1} / ${rand2})))
-            echo "What is" ${rand1} "/" ${rand2} "? " && read answer
+            echo "What is" ${rand1} "/" ${rand2} "? (no remainder)" && read answer
     fi
 
     if [[ ${answer} == ${quotient} ]]; then
@@ -127,6 +127,7 @@ function division() {
         echo "Final Score : ${total}"
         git checkout talmage
         git add mathFun.sh
+        git log -1
         git commit -m "`echo $(whoami)` got score ${total} on `echo $(date)` in division"
         git push
         exit
