@@ -24,7 +24,7 @@ function addition() {
         git status
         git add mathFun.sh
         git status
-        git commit -m "Final Score For Addition: ${total}"
+        git commit -m "${whoami}'s Final Score For Addition was: ${total} on ${date}"
         git status
         git push
         exit 1
